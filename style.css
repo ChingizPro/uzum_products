@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: system-ui, sans-serif;
+}
+*::before, *::after {
+    box-sizing: inherit;
+}
+span, a, label {
+    display: inline-block;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.title {
+    margin-bottom: 20px;
+}
+.chevroni {
+    font-size: 16px;
+    margin-left: 7px;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.product {
+    width: 18.5%;
+    transition: 0.2s;
+}
+.product:hover {
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
+}
+.pic {
+    transition: 0.2s;
+}
+.product:hover .pic {
+    scale: 1.1;
+}
+.content {
+    padding: 10px;
+    font-size: 15px;
+}
+.picbox {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.hearti {
+    position: absolute;
+    z-index: 3;
+    right: 15px;
+    top: 15px;  
+    color: white;
+    font-size: 18px;
+    cursor: pointer;  
+}
+.spans {
+    position: absolute;
+    z-index: 3;
+    left: 5px;
+    bottom: 5px;
+}
+.sale {
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+.original {
+    background-color: black;
+    color: yellow;
+    font-size: 15px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 4px;
+}
+.info {
+    margin-bottom: 8px;
+}
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.stari {
+    color: orange;
+    margin-right: 5px;
+    font-size: 11px;
+}
+.debt {
+    margin-bottom: 15px;
+}
+.debtspan {
+    background-color: gold;
+    padding: 3px 5px;
+    font-size: 14px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.prices {
+    font-size: 14px;
+}
+.price1 {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: gray;
+}
+.btn {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: silver;
+}
+@media(max-width:1200px){
+    .container {
+        padding: 20px;
+    }
+    .products {
+        justify-content: flex-start;
+        column-gap: 2%;
+        row-gap: 20px;
+    }
+    .product {
+        width: 32%;
+    }
+}
+@media(max-width:720px){
+    .product {
+        width: 49%;
+    }
+}
+@media(max-width:470px){
+    .product {
+        width: 100%;
+    }
+    .products {
+        column-gap: 0;
+    }
+}
